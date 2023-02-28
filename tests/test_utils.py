@@ -4,5 +4,5 @@ import pytest
 
 
 def test_json_load():
-    assert type(utils.load.json()) == list
-    assert len((utils.load_json())) > 0
+    assert type(utils.json_load()) == list
+    assert len((utils.json_load())) > 0
