@@ -1,6 +1,8 @@
 from foo import utils
-import requests
-import pytest
+
+
+# import requests
+# import pytest
 
 
 def test_json_load():
