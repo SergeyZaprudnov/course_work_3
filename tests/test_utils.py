@@ -5,8 +5,8 @@ import pytest
 
 def test_json_load():
     """тестирование получения данных"""
-    assert type(utils.json_load()) == list
-    assert len((utils.json_load())) > 0
+    assert type(utils.load_json()) == list
+    assert len((utils.load_json())) > 0
 
 
 def test_st_executed():
@@ -44,4 +44,4 @@ def test_date_format_change():
 def test_output():
     """тест вывода операций"""
     last_five_transaction = utils.last_five()[:5]
-    assert utils.output(last_five_transaction) != utils.json_load()
+    assert utils.output(last_five_transaction) != utils.load_json()
