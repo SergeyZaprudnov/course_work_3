@@ -30,3 +30,8 @@ def test_disquise_card():
     last_five_transactions = utils.last_five()[:5]
     assert isinstance(utils.disguise_card(last_five_transactions), list)
 
+def test_date_format_change():
+    """тест формата даты"""
+    last_five_transaction = utils.last_five()[:5]
+    assert isinstance(utils.date_format_change(last_five_transaction), list)
+
