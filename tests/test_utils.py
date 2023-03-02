@@ -17,3 +17,9 @@ def test_sort_date():
     """тест сортировки даты"""
     assert isinstance(utils.sort_date(), list)
     assert utils.sort_date() != utils.sort_date()
+
+def test_last_five():
+    """тест получения операций"""
+    assert isinstance(utils.last_five()[:5], list)
+    assert len(utils.last_five()[:5]) == 5
+
