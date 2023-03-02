@@ -13,3 +13,7 @@ def test_st_executed():
     assert isinstance(utils.st_executed(), list)
     assert utils.st_executed() is not None
 
+def test_sort_date():
+    """тест сортировки даты"""
+    assert isinstance(utils.sort_date(), list)
+    assert utils.sort_date() != utils.sort_date()
